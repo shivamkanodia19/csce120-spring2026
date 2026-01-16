@@ -23,4 +23,5 @@ int main () {
 
     std::cout << "found the greatest! " << greatest << std::endl;
 
+    return 0;
 }
