@@ -5,7 +5,7 @@
 void PrintVector(std::string label, const std::vector<int> v) {
   std::cout << "The " << label << " vector elements:" << std::endl;
   for (unsigned int i = 0; i < v.size(); ++i) {
-    std::cout << label << "[" << i << "] = " << v[i] << std::endl;
+    std::cout << label << "[" << i << "] = " << v.at(i) << std::endl;
   }
   std::cout << std::endl;
 }
@@ -13,7 +13,9 @@ void PrintVector(std::string label, const std::vector<int> v) {
 
 int SumVector(const std::vector<int> v) {
   int sum = 0;
-  // TODO: compute sum
+  for (unsigned int i = 0; i < v.size(); ++i) {
+    sum += v.at(i);
+  }
   return sum;
 }
 
@@ -32,7 +34,7 @@ int main() {
 
   // update all values
   for (unsigned int i = 0; i < evens.size(); ++i) {
-    evens[i] = i*2;
+    evens.at(i) = i*2;
   }
 
   // traverse and print values
