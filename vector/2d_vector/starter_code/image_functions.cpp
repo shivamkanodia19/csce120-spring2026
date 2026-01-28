@@ -18,8 +18,8 @@ void ProcessImage(char choice, std::vector<std::vector<Pixel> >& image) {
 
   // load image
   if (!LoadImage(originalImageFilename, image)) {
-      std::cout << "Image did not load, returning." << std::endl;
-      return;
+    std::cout << "Image did not load, returning." << std::endl;
+    return;
   }
 
   std::string OutputImageFilename;
@@ -179,7 +179,7 @@ void SepiaImage(std::vector<std::vector<Pixel> >& image) {
 
 /*  Function InvertImage
  *  image: 2d-vector of Pixels (structs)
- *  Return value: none, but image should be modified to be invert grayscale
+ *  Return value: none, but image should be modified to be inverted
  *
  *  Note: compute the inverted image by subtracting each pixel from 255
  *        (the max color we allow is 255)
