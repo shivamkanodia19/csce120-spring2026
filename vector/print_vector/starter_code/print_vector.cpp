@@ -11,8 +11,8 @@ void print_vector(const std::vector<std::string>& v) {
 }
 
 int main() {
-  std::vector<int> v1 {1, 2, 3, 4, 5};
-  std::vector<std::string> v2 {"gig", "'em", "aggies"};
+  std::vector<int> v1 = {1, 2, 3, 4, 5};
+  std::vector<std::string> v2 = {"gig", "'em", "aggies"};
 
   print_vector(v1);
   std::cout << std::endl;
